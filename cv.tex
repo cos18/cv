@@ -1,0 +1,124 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{black}
+\nopagenumbers{}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{ragged2e}
+\usepackage[scale=0.915]{geometry}
+\usepackage{import}
+\usepackage{multicol}
+\usepackage{import}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{tikz}
+\name{Sungwoo}{Park}
+\renewcommand*{\firstnamestyle}[1]{{\namefont\bfseries\textcolor{black}{#1}}}
+
+\newcommand{\updatedate}{Oct 7, 2025}
+
+\newcommand*{\customcventry}[7][.13em]{
+\begin{tabular}{@{}l}
+{\bfseries #4} \
+{\itshape #3}
+\end{tabular}
+\hfill
+\begin{tabular}{l@{}}
+{\bfseries #5} \
+{\itshape #2}
+\end{tabular}
+\ifx&#7&%
+\else{\
+\begin{minipage}{\maincolumnwidth}%
+\small#7%
+\end{minipage}}\fi%
+\par\addvspace{#1}}
+
+\begin{document}
+\makecvtitle
+\vspace*{-12mm}
+\begin{center}\textbf{ M.S. Student in Uncertainty Quantification Lab @ SNU }\end{center}
+\begin{center}
+\begin{tabular}{ c c c c }
+\faEnvelope\enspace \color{blue} \href{mailto:park.sw@snu.ac.kr}{park.sw@snu.ac.kr} \enspace & \faHome\enspace Seoul, South Korea \enspace &
+\faLinkedin\enspace \color{blue} \href{https://www.linkedin.com/in/cos18/}{in/cos18} \enspace &
+\faGithub\enspace \color{blue} \href{https://github.com/cos18}{github.com/cos18}
+\end{tabular}
+\end{center}
+
+\section{Interests}
+{How can we trust predictions from complex machine learning models? I'm interested in the intersection of \textbf{statistics and machine learning}, with focus on uncertainty quantification, distribution-free inference, and resampling-based approaches. My interests span conformal prediction, bootstrap methods, and other techniques that provide rigorous guarantees without restrictive assumptions.}
+
+
+\section{Experience}
+\customcventry{Jun 2025 - Present}{{\color{blue}\href{https://www.wonchang.net}{(Uncertainty Quantification Lab @ SNU)}}}{Research Assistant}{Seoul, South Korea}{}{
+Advised by Prof. Won Chang
+{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+\item Statistical nalysis on TabPFN, Tabular data foundation model
+\end{itemize}}
+}
+
+\customcventry{Jul 2023, Feb 2024 ‐ Jun 2024}{{\color{blue}\href{https://www.skku.edu}{(Sungkyunkwan Univ.)}}}{Undergraduate Research Assistant}{Seoul, South Korea}{}{
+Advised by Prof. Young-Geun Choi
+{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+\item Estimators about PU(Positive-Unlabeled) Learning and its consistency
+\item Convert teaching resources from R to Python
+\end{itemize}}}
+
+\customcventry{Apr 2019 ‐ Dec 2019}{{\color{blue}\href{https://www.swmaestro.org}{(SW Maestro)}}}{Trainee}{Seoul, South Korea}{}{
+10th Software Maestro for trainee and proceeding yoga posture correction application 'Somathealth' project
+{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+\item Develop RestAPI Video Server based on Django
+\item Making ML Pipeline
+\end{itemize}}}
+
+\section{Education}
+\customcventry{Mar 2025 - Present}{}{Seoul National University}{Seoul, South Korea}{}{
+  M.S. in Statistics
+  \begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+    \item Relevant Courses: Deep Learning: Statistical Perspective, Probability 1 \& 2
+  \end{itemize}
+}
+
+\customcventry{Mar 2018 - Feb 2025}{}{Sungkyunkwan University}{Seoul, South Korea}{}{
+B.S. in Computer Education and Mathematics Education
+\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+\item Relevant Courses: Probability and Statistics I, II, Multivariate Statistical Analysis, Artificial Intelligence, Linear Algebra, Analysis
+\item Obtained Public Teacher Certificates in Computer Science Education and Mathematics Education
+\end{itemize}
+}
+
+\section{Teaching}
+{\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+\item F32.102 Statistics, Teaching Assistant (2025 Summer)
+\item F32.102L Statistics Lab, Teaching Assistant (2025 Spring, Summer)
+\end{itemize}}
+
+\section{Skills}
+{\begin{itemize}[label=\textbullet]
+\item {\textbf{Data Analysis \& Visualization:} Pandas, Numpy, Matplotlib}
+\item {\textbf{Machine Learning \& Deep Learning:} Pytorch, Scikit-learn, Tensorflow}
+\item {\textbf{Programming:} Python, R, C/C++, Javascript, AWS, Linux}
+\item {\textbf{Language:} Korean(Native), English(Intermediate High) }
+\end{itemize}}
+
+\begin{tikzpicture}[remember picture, overlay]
+  \node at (current page.south) [yshift=20pt] {\centering Updated \updatedate};
+\end{tikzpicture}
+
+\newpage
+
+\section{External Activities}
+\customcventry{Sep 2021 ‐ Mar 2023}{}{Republic of Korea Army}{}{}{Militery Service}
+\customcventry{Apr 2021 ‐ May 2024}{Mozilla Developer Network}{Yari-content-ko Organizer}{}{}{Responsible for reviewing Korean translated docs on MDN}
+\customcventry{Jan 2020 ‐ Dec 2023}{42 Seoul}{Member}{}{}{Ecole 42, educational program in 42 Seoul, is a future-proof CS training to educate the next generation of software engineers}
+\customcventry{Mar 2018 ‐ Feb 2020}{Likelion SKKU}{Head of Education}{}{}{Educated non-majors with basic CS knowledge (Network, Linux, etc.) and Django stack to quickly realize their project ideas}
+
+
+\begin{tikzpicture}[remember picture, overlay]
+  \node at (current page.south) [yshift=20pt] {\centering Updated \updatedate};
+\end{tikzpicture}
+
+\end{document}
