@@ -24,7 +24,7 @@
 \name{Sungwoo}{Park}
 \renewcommand*{\firstnamestyle}[1]{{\namefont\bfseries\textcolor{black}{#1}}}
 
-\newcommand{\updatedate}{Aug 20, 2026}
+\newcommand{\updatedate}{Sep 29, 2026}
 
 \newcommand*{\customcventry}[7][.13em]{
 \begin{tabular}{@{}l}
@@ -67,7 +67,7 @@
 \customcventry{Jun 2025 - Present}{{\color{blue}\href{https://snuuq.github.io}{(Uncertainty Quantification Lab @ SNU)}}}{Research Assistant}{Seoul, South Korea}{}{
   Advised by Prof. Won Chang
     {\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
-        \item Statistical analysis on TFN(Tabular Foundation Model)
+        \item Statistical analysis on TFMs (Tabular Foundation Models)
       \end{itemize}}
 }
 
@@ -84,6 +84,11 @@
       \item Developed RestAPI video server based on Django
       \item Built ML pipeline
     \end{itemize}}}
+
+\nocite{*}
+\bibliographystyle{eprintonly}
+\bibliography{publications}
+\noindent\small $^{*}$ Equal contribution; $^{\dagger}$ Corresponding author.\normalsize
 
 \section{Education}
 \customcventry{Mar 2025 - Present}{}{Seoul National University}{Seoul, South Korea}{}{
@@ -105,11 +110,18 @@
 
 \customcventry{}{Seoul National University}{Teaching Assistant}{}{}{
   \begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+    \item Concepts and Applications in Probability (326.211): 2026 Fall
     \item Mathematical Statistics (M1399.000900): 2026 Spring
     \item Statistics (F32.102): 2025 Summer, Winter, 2026 Summer
     \item Statistics Lab (F32.102L): 2025 Spring, Summer, Winter, 2026 Summer
   \end{itemize}
 }
+
+\begin{tikzpicture}[remember picture, overlay]
+  \node at (current page.south) [yshift=20pt] {\centering Updated \updatedate};
+\end{tikzpicture}
+
+\newpage
 
 \section{Skills}
  {\begin{itemize}[label=\textbullet]
@@ -118,12 +130,6 @@
     \item {\textbf{Programming:} Python, R, C/C++, Javascript, AWS, Linux}
     \item {\textbf{Language:} Korean(Native), English(Intermediate High) }
   \end{itemize}}
-
-\begin{tikzpicture}[remember picture, overlay]
-  \node at (current page.south) [yshift=20pt] {\centering Updated \updatedate};
-\end{tikzpicture}
-
-\newpage
 
 \section{External Activities}
 \customcventry{Sep 2021 ‐ Mar 2023}{}{Republic of Korea Army}{}{}{Military Service}
